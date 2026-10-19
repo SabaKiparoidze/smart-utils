@@ -79,7 +79,64 @@ function App() {
           </div>
         </aside>
       </div>
+      {/* Donation Block */}
+<div style={{
+  marginTop: '40px',
+  marginBottom: '20px',
+  padding: '20px',
+  borderRadius: '16px',
+  background: 'rgba(255, 255, 255, 0.05)',
+  backdropFilter: 'blur(10px)',
+  border: '1px solid rgba(255, 255, 255, 0.1)',
+  textAlign: 'center',
+  maxWidth: '480px',
+  margin: '30px auto'
+}}>
+  <h3 style={{ fontSize: '18px', marginBottom: '8px', color: '#fff' }}>
+    ☕ მოგეწონა ინსტრუმენტები?
+  </h3>
+  <p style={{ fontSize: '13px', color: '#aaa', marginBottom: '16px' }}>
+    თუ ეს საიტი დაგეხმარა, შეგიძლია მხარი დაუჭირო მის განვითარებას:
+  </p>
 
+  <div style={{
+    background: '#18181b',
+    padding: '12px 16px',
+    borderRadius: '10px',
+    display: 'flex',
+    alignItems: 'center',
+    justify: 'space-between',
+    border: '1px solid #27272a'
+  }}>
+    <div style={{ textAlign: 'left' }}>
+      <span style={{ fontSize: '11px', color: '#71717a', display: 'block' }}>
+        გადარიცხვა პირადი ნომრით (BOG / TBC)
+      </span>
+      <span style={{ fontSize: '15px', fontWeight: 'bold', color: '#38bdf8', letterSpacing: '1px' }}>
+        57401065993
+      </span>
+      <span style={{ fontSize: '11px', color: '#a1a1aa', display: 'block', marginTop: '2px' }}>
+        მიმღები: S.Kiparoidze
+      </span>
+    </div>
+
+    <button
+      onClick={() => navigator.clipboard.writeText("57401065993")}
+      style={{
+        background: '#3b82f6',
+        color: '#fff',
+        border: 'none',
+        padding: '8px 12px',
+        borderRadius: '6px',
+        cursor: 'pointer',
+        fontWeight: '600',
+        fontSize: '12px'
+      }}
+    >
+      აკოპირებს 📋
+    </button>
+  </div>
+</div>
       {/* FOOTER */}
       <footer className="main-footer">
         <p>© 2026 SmartUtils. ყველა უფლება დაცულია.</p>
@@ -230,65 +287,7 @@ function TodoListTool() {
           </li>
         ))}
       </ul>
-      {/* Donation Block */}
-<div style={{
-  marginTop: '50px',
-  marginBottom: '30px',
-  padding: '25px',
-  borderRadius: '16px',
-  background: 'rgba(255, 255, 255, 0.05)',
-  backdropFilter: 'blur(10px)',
-  border: '1px solid rgba(255, 255, 255, 0.1)',
-  textAlign: 'center',
-  maxWidth: '480px',
-  marginLeft: 'auto',
-  marginRight: 'auto'
-}}>
-  <h3 style={{ fontSize: '20px', marginBottom: '8px', color: '#fff' }}>
-    ☕ მოგეწონა ინსტრუმენტები?
-  </h3>
-  <p style={{ fontSize: '14px', color: '#aaa', marginBottom: '20px' }}>
-    თუ ეს საიტი დაგეხმარა, შეგიძლია მხარი დაუჭირო მის განვითარებას:
-  </p>
-
-  <div style={{
-    background: '#18181b',
-    padding: '12px 16px',
-    borderRadius: '10px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    border: '1px solid #27272a'
-  }}>
-    <div style={{ textAlign: 'left' }}>
-      <span style={{ fontSize: '12px', color: '#71717a', display: 'block' }}>
-        გადარიცხვა პირადი ნომრით (BOG / TBC)
-      </span>
-      <span style={{ fontSize: '16px', fontWeight: 'bold', color: '#38bdf8', letterSpacing: '1px' }}>
-        57401065993
-      </span>
-      <span style={{ fontSize: '12px', color: '#a1a1aa', display: 'block', marginTop: '2px' }}>
-        მიმღები: S.Kiparoidze
-      </span>
-    </div>
-
-    <button
-      onClick={() => navigator.clipboard.writeText("57401065993")}
-      style={{
-        background: '#3b82f6',
-        color: '#fff',
-        border: 'none',
-        padding: '8px 14px',
-        borderRadius: '6px',
-        cursor: 'pointer',
-        fontWeight: '600',
-        fontSize: '13px'
-      }}
-    >
-      აკოპირებს 📋
-    </button>
-  </div>
-</div>
+      
     </div>
     
     
