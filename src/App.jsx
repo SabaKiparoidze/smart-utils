@@ -230,11 +230,10 @@ function TodoListTool() {
           </li>
         ))}
       </ul>
-    </div>
-  );
-  {/* Donation Block */}
+      {/* Donation Block */}
 <div style={{
   marginTop: '50px',
+  marginBottom: '30px',
   padding: '25px',
   borderRadius: '16px',
   background: 'rgba(255, 255, 255, 0.05)',
@@ -242,7 +241,8 @@ function TodoListTool() {
   border: '1px solid rgba(255, 255, 255, 0.1)',
   textAlign: 'center',
   maxWidth: '480px',
-  margin: '40px auto'
+  marginLeft: 'auto',
+  marginRight: 'auto'
 }}>
   <h3 style={{ fontSize: '20px', marginBottom: '8px', color: '#fff' }}>
     ☕ მოგეწონა ინსტრუმენტები?
@@ -257,7 +257,7 @@ function TodoListTool() {
     borderRadius: '10px',
     display: 'flex',
     alignItems: 'center',
-    justify: 'space-between',
+    justifyContent: 'space-between',
     border: '1px solid #27272a'
   }}>
     <div style={{ textAlign: 'left' }}>
@@ -289,6 +289,11 @@ function TodoListTool() {
     </button>
   </div>
 </div>
+    </div>
+    
+    
+  );
+  
 }
 
 export default App;
